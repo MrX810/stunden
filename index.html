@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#343534">
+  <meta name="description" content="Dein persönliches Stundenbuch. Arbeitszeit einfach eintragen, Ziele im Blick behalten.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>stunden — dein Stundenbuch</title>
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./assets/fonts.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script>try{const s=JSON.parse(localStorage.getItem('stunden:v1'));if(s?.settings?.theme==='light')document.documentElement.dataset.theme='light';}catch{}</script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div id="app"><p class="initial-loading">stunden</p></div>
+  <dialog id="entry-dialog" class="sheet" aria-labelledby="entry-title"></dialog>
+  <dialog id="confirm-dialog" class="sheet compact" aria-labelledby="confirm-title"></dialog>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Bitte aktiviere JavaScript, um stunden zu benutzen.</noscript>
+</body>
+</html>
