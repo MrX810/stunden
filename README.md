@@ -24,14 +24,6 @@ Da Browserdaten verloren gehen können, sollten regelmäßig JSON-Backups über 
 
 Die App besteht aus HTML, CSS und nativen JavaScript-Modulen. Sie benötigt kein Framework, keinen Build-Schritt und keine extern geladenen Laufzeit-Abhängigkeiten. Schriftarten und Icons liegen direkt im Projekt.
 
-## Lokal starten
-
-```sh
-python3 -m http.server 4173
-```
-
-Danach ist die App unter [http://127.0.0.1:4173](http://127.0.0.1:4173) erreichbar.
-
 ## Veröffentlichung
 
 Die Dateien können direkt über GitHub Pages bereitgestellt werden. Die App verwendet ausschließlich relative Pfade und funktioniert daher auch in einem Repository-Unterordner.
